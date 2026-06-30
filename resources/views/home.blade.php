@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config("app.name") }} — Portfolio</title>
+    <title>{{ config("app.name") }} - Portfolio</title>
     @vite(["resources/css/app.css", "resources/js/app.js"])
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
@@ -35,9 +35,9 @@
         </div>
         <div class="flex justify-center gap-4 text-sm text-gray-500">
             <a href="https://github.com/Alok-CS-2022" target="_blank" class="hover:text-gray-900">GitHub</a>
-            <span>·</span>
+            <span>Â·</span>
             <a href="#" target="_blank" class="hover:text-gray-900">LinkedIn</a>
-            <span>·</span>
+            <span>Â·</span>
             <a href="mailto:you@example.com" class="hover:text-gray-900">Email</a>
         </div>
     </section>
@@ -146,9 +146,9 @@
         </form>
         <div class="flex gap-4 text-sm text-gray-500">
             <a href="mailto:you@example.com" class="hover:text-gray-900">Email</a>
-            <span>·</span>
+            <span>Â·</span>
             <a href="https://github.com/Alok-CS-2022" target="_blank" class="hover:text-gray-900">GitHub</a>
-            <span>·</span>
+            <span>Â·</span>
             <a href="#" target="_blank" class="hover:text-gray-900">LinkedIn</a>
         </div>
     </section>
@@ -160,3 +160,4 @@
 
 </body>
 </html>
+

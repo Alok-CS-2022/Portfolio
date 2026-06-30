@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\Admin\ExperienceController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -14,5 +15,6 @@ Route::middleware('auth')->group(function () {
 });
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::resource('projects', ProjectController::class);
+    Route::resource('experiences', ExperienceController::class);
 });
 require __DIR__.'/auth.php';

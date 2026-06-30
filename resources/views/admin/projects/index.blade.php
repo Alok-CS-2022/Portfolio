@@ -1,4 +1,4 @@
-<x-app-layout>
+ï»¿<x-app-layout>
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Projects</h2>
@@ -41,7 +41,7 @@
                                     @if($project->is_featured)
                                         <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Featured</span>
                                     @else
-                                        <span class="text-gray-400 text-sm">—</span>
+                                        <span class="text-gray-400 text-sm">-</span>
                                     @endif
                                 </td>
                                 <td class="px-4 py-3">{{ $project->sort_order }}</td>
@@ -65,3 +65,4 @@
         </div>
     </div>
 </x-app-layout>
+

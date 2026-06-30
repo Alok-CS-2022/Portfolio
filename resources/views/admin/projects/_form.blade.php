@@ -1,4 +1,4 @@
-<div class="mb-4">
+﻿<div class="mb-4">
     <label class="block text-sm font-medium text-gray-700">Title</label>
     <input type="text" name="title" value="{{ old('title', $project->title ?? '') }}"
         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
@@ -57,3 +57,4 @@
         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
     @error('sort_order') <p class="text-red-600 text-sm mt-1">{{ $message }}</p> @enderror
 </div>
+
