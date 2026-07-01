@@ -2,6 +2,7 @@
 use App\Http\Controllers\Admin\ExperienceController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ResearchController;
+use App\Http\Controllers\Admin\PovController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,8 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::resource('projects', ProjectController::class);
     Route::resource('experiences', ExperienceController::class);
     Route::resource('research', ResearchController::class);
+    Route::resource('povs', PovController::class);
 });
 require __DIR__.'/auth.php';
+
 
