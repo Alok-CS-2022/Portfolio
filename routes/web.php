@@ -25,6 +25,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::resource('povs', PovController::class);
     Route::get('settings', [SettingsController::class, 'edit'])->name('settings.edit');
     Route::put('settings', [SettingsController::class, 'update'])->name('settings.update');
+    Route::get('messages', [ContactController::class, 'index'])->name('messages.index');
 });
 require __DIR__.'/auth.php';
 

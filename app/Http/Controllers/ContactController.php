@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        $messages = ContactMessage::orderBy('created_at', 'desc')->get();
+        return view('admin.messages.index', compact('messages'));
+    }
+
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -31,7 +37,6 @@ class ContactController extends Controller
                 }
             );
         } catch (\Exception $e) {
-            // Mail failed (e.g. bad driver config) - message is still saved in DB, so don't block the user
             report($e);
         }
 

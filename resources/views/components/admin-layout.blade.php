@@ -29,6 +29,7 @@
                         ['route' => 'admin.research.index', 'label' => 'Research', 'count' => \App\Models\Research::count()],
                         ['route' => 'admin.povs.index', 'label' => 'POV', 'count' => \App\Models\Pov::count()],
                         ['route' => 'admin.settings.edit', 'label' => 'Settings', 'count' => null],
+                        ['route' => 'admin.messages.index', 'label' => 'Messages', 'count' => \App\Models\ContactMessage::count()],
                     ];
                 @endphp
 
