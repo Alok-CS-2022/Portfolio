@@ -1,10 +1,13 @@
 @if($research->count())
 <section id="research" class="max-w-5xl mx-auto px-6 py-10">
-    <p class="text-xs tracking-widest uppercase mb-2" style="font-family: monospace; color: #666;">SELECTED PUBLICATIONS</p>
+    <div class="flex items-center justify-between mb-2">
+        <p class="text-xs tracking-widest uppercase" style="font-family: monospace; color: #666;">SELECTED PUBLICATIONS</p>
+        <a href="{{ route('research.index') }}" class="text-xs tracking-widest uppercase" style="font-family: monospace; color: #5a7a00; border-bottom: 1px solid #5a7a00;">View All &rarr;</a>
+    </div>
     <h2 class="mb-2" style="font-family: Georgia, serif; font-size: 2.5rem; font-weight: 900;">Research</h2>
     <p class="text-sm text-gray-500 mb-6">A few selected works, ordered by sort order. Click thumbnails to open links.</p>
     <div class="border border-gray-800">
-        @foreach($research as $index => $item)
+        @foreach($research->take(3) as $index => $item)
             <div class="flex gap-4 px-6 py-4 border-b border-gray-300 last:border-b-0 items-start">
                 <div class="shrink-0 w-8 text-xs text-gray-400 pt-1" style="font-family: monospace;">
                     {{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}
