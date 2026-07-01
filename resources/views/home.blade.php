@@ -32,6 +32,7 @@
         @include('partials.research')
         @include('partials.projects')
         @include('partials.povs')
+        @include('partials.contact')
     </main>
 
     @include('partials.footer')
